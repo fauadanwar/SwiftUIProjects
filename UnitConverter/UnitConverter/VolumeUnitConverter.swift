@@ -25,8 +25,9 @@ struct VolumeUnitConverter {
         self.volumeUnits = volumeUnits
     }
     
-    func getToUnitValue(conversionFromUnit: String, conversionToUnit: String, fromValue: Double) -> String {
-        if let fromUnit = VolumeUnit(rawValue: conversionFromUnit)
+    func getToUnitValue(conversionFromUnit: String, conversionToUnit: String, fromValue: Double) -> Measurement<UnitVolume>? {
+        if let fromUnit = VolumeUnit(rawValue: conversionFromUnit),
+           let toUnit = VolumeUnit(rawValue: conversionToUnit)
         {
             var fromMeasurement: Measurement<UnitVolume>
             switch fromUnit {
@@ -41,30 +42,19 @@ struct VolumeUnitConverter {
             case .gallons:
                 fromMeasurement = Measurement(value: fromValue, unit: UnitVolume.gallons)
             }
-            return getFormattedString(fromMeasurement: fromMeasurement, conversionToUnit: conversionToUnit)
-        }
-        return "Failed to convert"
-    }
-    
-    private func getFormattedString(fromMeasurement: Measurement<UnitVolume>, conversionToUnit: String) -> String {
-        let mf = MeasurementFormatter()
-        mf.numberFormatter.maximumFractionDigits = Int.max
-        mf.unitOptions = .providedUnit
-        if let toUnit = VolumeUnit(rawValue: conversionToUnit)
-        {
             switch toUnit {
             case .milliliters:
-                return mf.string(from: fromMeasurement.converted(to: UnitVolume.milliliters))
+                return fromMeasurement.converted(to: UnitVolume.milliliters)
             case .liters:
-                return mf.string(from: fromMeasurement.converted(to: UnitVolume.liters))
+                return fromMeasurement.converted(to: UnitVolume.liters)
             case .cups:
-                return mf.string(from: fromMeasurement.converted(to: UnitVolume.cups))
+                return fromMeasurement.converted(to: UnitVolume.cups)
             case .pints:
-                return mf.string(from: fromMeasurement.converted(to: UnitVolume.pints))
+                return fromMeasurement.converted(to: UnitVolume.pints)
             case .gallons:
-                return mf.string(from: fromMeasurement.converted(to: UnitVolume.gallons))
+                return fromMeasurement.converted(to: UnitVolume.gallons)
             }
         }
-        return "Failed to convert"
+        return nil
     }
 }

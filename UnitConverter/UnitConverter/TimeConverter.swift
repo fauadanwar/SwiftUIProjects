@@ -15,7 +15,6 @@ enum TimeUnit: String, CaseIterable {
     case seconds = "Seconds"
     case minutes = "Minutes"
     case hours = "Hours"
-    case days = "Days"
 }
 
 struct TimeConverter {
@@ -29,8 +28,9 @@ struct TimeConverter {
         self.timeUnits = timeUnits
     }
     
-    func getToUnitValue(conversionFromUnit: String, conversionToUnit: String, fromValue: Double) -> String {
-        if let fromUnit = TimeUnit(rawValue: conversionFromUnit)
+    func getToUnitValue(conversionFromUnit: String, conversionToUnit: String, fromValue: Double) -> Measurement<UnitDuration>? {
+        if let fromUnit = TimeUnit(rawValue: conversionFromUnit),
+           let toUnit = TimeUnit(rawValue: conversionToUnit)
         {
             var fromMeasurement: Measurement<UnitDuration>
             switch fromUnit {
@@ -48,40 +48,25 @@ struct TimeConverter {
                 fromMeasurement = Measurement(value: fromValue, unit: UnitDuration.minutes)
             case .hours:
                 fromMeasurement = Measurement(value: fromValue, unit: UnitDuration.hours)
-            case .days:
-                fromMeasurement = Measurement(value: fromValue * 24, unit: UnitDuration.hours)
             }
-            return getFormattedString(fromMeasurement: fromMeasurement, conversionToUnit: conversionToUnit)
-        }
-        return "Failed to convert"
-    }
-    
-    private func getFormattedString(fromMeasurement: Measurement<UnitDuration>, conversionToUnit: String) -> String {
-        let mf = MeasurementFormatter()
-        mf.numberFormatter.maximumFractionDigits = Int.max
-        mf.unitOptions = .providedUnit
-        if let toUnit = TimeUnit(rawValue: conversionToUnit)
-        {
+            
             switch toUnit {
             case .picoseconds:
-                return mf.string(from: fromMeasurement.converted(to: UnitDuration.picoseconds))
+                return fromMeasurement.converted(to: UnitDuration.picoseconds)
             case .nanoseconds:
-                return mf.string(from: fromMeasurement.converted(to: UnitDuration.nanoseconds))
+                return fromMeasurement.converted(to: UnitDuration.nanoseconds)
             case .microseconds:
-                return mf.string(from: fromMeasurement.converted(to: UnitDuration.microseconds))
+                return fromMeasurement.converted(to: UnitDuration.microseconds)
             case .milliseconds:
-                return mf.string(from: fromMeasurement.converted(to: UnitDuration.milliseconds))
+                return fromMeasurement.converted(to: UnitDuration.milliseconds)
             case .seconds:
-                return mf.string(from: fromMeasurement.converted(to: UnitDuration.seconds))
+                return fromMeasurement.converted(to: UnitDuration.seconds)
             case .minutes:
-                return mf.string(from: fromMeasurement.converted(to: UnitDuration.minutes))
+                return fromMeasurement.converted(to: UnitDuration.minutes)
             case .hours:
-                return mf.string(from: fromMeasurement.converted(to: UnitDuration.hours))
-            case .days:
-                let numberOfDays = fromMeasurement.converted(to: UnitDuration.hours).value / 24
-                return "\(numberOfDays.formatted()) " + (numberOfDays > 1 ? "Days" : "Day")
+                return fromMeasurement.converted(to: UnitDuration.hours)
             }
         }
-        return "Failed to convert"
+        return nil
     }
 }

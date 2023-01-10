@@ -26,9 +26,10 @@ struct LengthConverter {
         self.lengthUnits = lengthUnits
     }
     
-    func getToUnitValue(conversionFromUnit: String, conversionToUnit: String, fromValue: Double) -> String {
+    func getToUnitValue(conversionFromUnit: String, conversionToUnit: String, fromValue: Double) -> Measurement<UnitLength>? {
         
-        if let fromUnit = LengthUnit(rawValue: conversionFromUnit)
+        if let fromUnit = LengthUnit(rawValue: conversionFromUnit),
+           let toUnit = LengthUnit(rawValue: conversionToUnit)
         {
             var fromMeasurement: Measurement<UnitLength>
             switch fromUnit {
@@ -43,30 +44,19 @@ struct LengthConverter {
             case .miles:
                 fromMeasurement = Measurement(value: fromValue, unit: UnitLength.miles)
             }
-            return getFormattedString(fromMeasurement: fromMeasurement, conversionToUnit: conversionToUnit)
-        }
-        return "Failed to convert"
-    }
-    
-    private func getFormattedString(fromMeasurement: Measurement<UnitLength>, conversionToUnit: String) -> String {
-        let mf = MeasurementFormatter()
-        mf.numberFormatter.maximumFractionDigits = Int.max
-        mf.unitOptions = .providedUnit
-        if let toUnit = LengthUnit(rawValue: conversionToUnit)
-        {
             switch toUnit {
             case .meters:
-                return mf.string(from: fromMeasurement.converted(to: UnitLength.meters))
+                return fromMeasurement.converted(to: UnitLength.meters)
             case .kilometers:
-                return mf.string(from: fromMeasurement.converted(to: UnitLength.kilometers))
+                return fromMeasurement.converted(to: UnitLength.kilometers)
             case .feet:
-                return mf.string(from: fromMeasurement.converted(to: UnitLength.feet))
+                return fromMeasurement.converted(to: UnitLength.feet)
             case .yards:
-                return mf.string(from: fromMeasurement.converted(to: UnitLength.yards))
+                return fromMeasurement.converted(to: UnitLength.yards)
             case .miles:
-                return mf.string(from: fromMeasurement.converted(to: UnitLength.miles))
+                return fromMeasurement.converted(to: UnitLength.miles)
             }
         }
-        return "Failed to convert"
+        return nil
     }
 }

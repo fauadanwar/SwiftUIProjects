@@ -17,10 +17,11 @@ enum UnitType: String, CaseIterable {
 class UnitConverter {
     
     let unitTypes: [UnitType]
-    lazy var temperatureConverter = TemperatureConverter()
-    lazy var lengthConverter = LengthConverter()
-    lazy var timeConverter = TimeConverter()
-    lazy var volumeConverter = VolumeUnitConverter()
+    private let formatter: MeasurementFormatter
+    private lazy var temperatureConverter = TemperatureConverter()
+    private lazy var lengthConverter = LengthConverter()
+    private lazy var timeConverter = TimeConverter()
+    private lazy var volumeConverter = VolumeUnitConverter()
 
     init() {
         var unitTypes = [UnitType]()
@@ -28,6 +29,11 @@ class UnitConverter {
             unitTypes.append(unitType)
         }
         self.unitTypes = unitTypes
+        
+        formatter = MeasurementFormatter()
+        formatter.numberFormatter.maximumFractionDigits = Int.max
+        formatter.unitOptions = .providedUnit
+        formatter.unitStyle = .long
     }
 
     func unitsArray(unitType: UnitType) -> [String] {
@@ -67,15 +73,29 @@ class UnitConverter {
     }
     
     func getUnitValue(unitType: UnitType, conversionFromUnit: String, conversionToUnit: String, fromValue: Double) -> String {
+        var unitValue: String = "Failed to convert"
         switch unitType {
         case .temperature:
-            return temperatureConverter.getToUnitValue(conversionFromUnit: conversionFromUnit, conversionToUnit: conversionToUnit, fromValue: fromValue)
+            if let measurement = temperatureConverter.getToUnitValue(conversionFromUnit: conversionFromUnit, conversionToUnit: conversionToUnit, fromValue: fromValue)
+            {
+                unitValue = formatter.string(from: measurement)
+            }
         case .length:
-            return lengthConverter.getToUnitValue(conversionFromUnit: conversionFromUnit, conversionToUnit: conversionToUnit, fromValue: fromValue)
+            if let measurement = lengthConverter.getToUnitValue(conversionFromUnit: conversionFromUnit, conversionToUnit: conversionToUnit, fromValue: fromValue)
+            {
+                unitValue = formatter.string(from: measurement)
+            }
         case .time:
-            return timeConverter.getToUnitValue(conversionFromUnit: conversionFromUnit, conversionToUnit: conversionToUnit, fromValue: fromValue)
+            if let measurement = timeConverter.getToUnitValue(conversionFromUnit: conversionFromUnit, conversionToUnit: conversionToUnit, fromValue: fromValue)
+            {
+                unitValue = formatter.string(from: measurement)
+            }
         case .volume:
-            return volumeConverter.getToUnitValue(conversionFromUnit: conversionFromUnit, conversionToUnit: conversionToUnit, fromValue: fromValue)
+            if let measurement = volumeConverter.getToUnitValue(conversionFromUnit: conversionFromUnit, conversionToUnit: conversionToUnit, fromValue: fromValue)
+            {
+                unitValue = formatter.string(from: measurement)
+            }
         }
+        return unitValue
     }
 }

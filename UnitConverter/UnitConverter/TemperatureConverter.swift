@@ -24,9 +24,10 @@ struct TemperatureConverter {
         self.temperatureUnits = temperatureUnits
     }
     
-    func getToUnitValue(conversionFromUnit: String, conversionToUnit: String, fromValue: Double) -> String {
+    func getToUnitValue(conversionFromUnit: String, conversionToUnit: String, fromValue: Double) -> Measurement<UnitTemperature>? {
         
-        if let fromUnit = TemperatureUnit(rawValue: conversionFromUnit)
+        if let fromUnit = TemperatureUnit(rawValue: conversionFromUnit),
+           let toUnit = TemperatureUnit(rawValue: conversionToUnit)
         {
             var fromMeasurement: Measurement<UnitTemperature>
             switch fromUnit {
@@ -37,26 +38,16 @@ struct TemperatureConverter {
             case .kelvin:
                 fromMeasurement = Measurement(value: fromValue, unit: UnitTemperature.kelvin)
             }
-            return getFormattedString(fromMeasurement: fromMeasurement, conversionToUnit: conversionToUnit)
-        }
-        return "Failed to convert"
-    }
-    
-    private func getFormattedString(fromMeasurement: Measurement<UnitTemperature>, conversionToUnit: String) -> String {
-        let mf = MeasurementFormatter()
-        mf.numberFormatter.maximumFractionDigits = 0
-        mf.unitOptions = .providedUnit
-        if let toUnit = TemperatureUnit(rawValue: conversionToUnit)
-        {
+            
             switch toUnit {
             case .celsius:
-                return mf.string(from: fromMeasurement.converted(to: UnitTemperature.celsius))
+                return fromMeasurement.converted(to: UnitTemperature.celsius)
             case .fahrenheit:
-                return mf.string(from: fromMeasurement.converted(to: UnitTemperature.fahrenheit))
+                return fromMeasurement.converted(to: UnitTemperature.fahrenheit)
             case .kelvin:
-                return mf.string(from: fromMeasurement.converted(to: UnitTemperature.kelvin))
+                return fromMeasurement.converted(to: UnitTemperature.kelvin)
             }
         }
-        return "Failed to convert"
+        return nil
     }
 }
