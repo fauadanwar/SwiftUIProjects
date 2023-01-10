@@ -13,8 +13,8 @@ struct ContentView: View {
     @FocusState private var valueIsFocused: Bool
     @State private var valueFromConvert: Double = 0.0
     @State private var unitType: UnitType = .temperature
-    @State private var conversionFromUnit: String = "Celsius"
-    @State private var conversionToUnit: String = "Celsius"
+    @State private var conversionFromUnit: Dimension = UnitTemperature.celsius
+    @State private var conversionToUnit: Dimension = UnitTemperature.fahrenheit
     private var valueToConvert: String {
         return unitConverter.getUnitValue(unitType: unitType, conversionFromUnit: conversionFromUnit, conversionToUnit: conversionToUnit, fromValue: valueFromConvert)
     }
@@ -29,14 +29,14 @@ struct ContentView: View {
                         }
                     }
                     .onChange(of: unitType) { newValue in
-                        conversionFromUnit = unitConverter.defaultValue(unitType: newValue)
-                        conversionToUnit = unitConverter.defaultValue(unitType: newValue)
+                        conversionFromUnit = unitConverter.unitsArray[0]
+                        conversionToUnit = unitConverter.unitsArray[1]
                     }
                 }
                 Section {
                     Picker("From Unit", selection: $conversionFromUnit) {
                         ForEach(unitConverter.unitsArray(unitType: unitType), id: \.self) {
-                            Text($0)
+                            Text(unitConverter.getStringValue(unit: $0))
                         }
                     }
                     TextField("Value", value: $valueFromConvert, format: .number)
@@ -46,7 +46,7 @@ struct ContentView: View {
                 Section {
                     Picker("To Unit", selection: $conversionToUnit) {
                         ForEach(unitConverter.unitsArray(unitType: unitType), id: \.self) {
-                            Text($0)
+                            Text(unitConverter.getStringValue(unit: $0))
                         }
                     }
                     Text(valueToConvert)

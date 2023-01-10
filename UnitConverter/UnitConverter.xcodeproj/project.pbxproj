@@ -11,10 +11,6 @@
 		B4244B2F296AD06C00E9A494 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4244B2E296AD06C00E9A494 /* ContentView.swift */; };
 		B4244B31296AD06F00E9A494 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B4244B30296AD06F00E9A494 /* Assets.xcassets */; };
 		B4244B34296AD06F00E9A494 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B4244B33296AD06F00E9A494 /* Preview Assets.xcassets */; };
-		B4244B3B296BFF0400E9A494 /* TimeConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4244B3A296BFF0400E9A494 /* TimeConverter.swift */; };
-		B4244B3D296BFFCA00E9A494 /* TemperatureConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4244B3C296BFFCA00E9A494 /* TemperatureConverter.swift */; };
-		B4244B3F296BFFDF00E9A494 /* LengthConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4244B3E296BFFDF00E9A494 /* LengthConverter.swift */; };
-		B4244B41296C002700E9A494 /* VolumeUnitConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4244B40296C002700E9A494 /* VolumeUnitConverter.swift */; };
 		B4244B43296C003F00E9A494 /* UnitConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4244B42296C003F00E9A494 /* UnitConverter.swift */; };
 /* End PBXBuildFile section */
 
@@ -24,10 +20,6 @@
 		B4244B2E296AD06C00E9A494 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		B4244B30296AD06F00E9A494 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B4244B33296AD06F00E9A494 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		B4244B3A296BFF0400E9A494 /* TimeConverter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeConverter.swift; sourceTree = "<group>"; };
-		B4244B3C296BFFCA00E9A494 /* TemperatureConverter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemperatureConverter.swift; sourceTree = "<group>"; };
-		B4244B3E296BFFDF00E9A494 /* LengthConverter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LengthConverter.swift; sourceTree = "<group>"; };
-		B4244B40296C002700E9A494 /* VolumeUnitConverter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VolumeUnitConverter.swift; sourceTree = "<group>"; };
 		B4244B42296C003F00E9A494 /* UnitConverter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnitConverter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -64,10 +56,6 @@
 				B4244B2C296AD06C00E9A494 /* UnitConverterApp.swift */,
 				B4244B2E296AD06C00E9A494 /* ContentView.swift */,
 				B4244B42296C003F00E9A494 /* UnitConverter.swift */,
-				B4244B3C296BFFCA00E9A494 /* TemperatureConverter.swift */,
-				B4244B3E296BFFDF00E9A494 /* LengthConverter.swift */,
-				B4244B3A296BFF0400E9A494 /* TimeConverter.swift */,
-				B4244B40296C002700E9A494 /* VolumeUnitConverter.swift */,
 				B4244B30296AD06F00E9A494 /* Assets.xcassets */,
 				B4244B32296AD06F00E9A494 /* Preview Content */,
 			);
@@ -154,11 +142,7 @@
 			files = (
 				B4244B43296C003F00E9A494 /* UnitConverter.swift in Sources */,
 				B4244B2F296AD06C00E9A494 /* ContentView.swift in Sources */,
-				B4244B3B296BFF0400E9A494 /* TimeConverter.swift in Sources */,
-				B4244B41296C002700E9A494 /* VolumeUnitConverter.swift in Sources */,
-				B4244B3F296BFFDF00E9A494 /* LengthConverter.swift in Sources */,
 				B4244B2D296AD06C00E9A494 /* UnitConverterApp.swift in Sources */,
-				B4244B3D296BFFCA00E9A494 /* TemperatureConverter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
