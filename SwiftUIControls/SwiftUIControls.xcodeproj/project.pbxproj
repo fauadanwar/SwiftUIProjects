@@ -13,6 +13,9 @@
 		B4067961297005F600C2B17D /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4067960297005F600C2B17D /* Alert.swift */; };
 		B406797D297697ED00C2B17D /* EnvironmentModifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = B406797C297697ED00C2B17D /* EnvironmentModifiers.swift */; };
 		B406797F2976982C00C2B17D /* ViewsAsProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = B406797E2976982C00C2B17D /* ViewsAsProperties.swift */; };
+		B40679812976A79000C2B17D /* ViewComposition.swift in Sources */ = {isa = PBXBuildFile; fileRef = B40679802976A79000C2B17D /* ViewComposition.swift */; };
+		B40679832976A83D00C2B17D /* CustomModifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = B40679822976A83D00C2B17D /* CustomModifiers.swift */; };
+		B40679852976ACAF00C2B17D /* GridStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = B40679842976ACAF00C2B17D /* GridStack.swift */; };
 		B4244B022962C02900E9A494 /* SwiftUIControlsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4244B012962C02900E9A494 /* SwiftUIControlsApp.swift */; };
 		B4244B042962C02900E9A494 /* PickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4244B032962C02900E9A494 /* PickerView.swift */; };
 		B4244B062962C02A00E9A494 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B4244B052962C02A00E9A494 /* Assets.xcassets */; };
@@ -27,6 +30,9 @@
 		B4067960297005F600C2B17D /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
 		B406797C297697ED00C2B17D /* EnvironmentModifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnvironmentModifiers.swift; sourceTree = "<group>"; };
 		B406797E2976982C00C2B17D /* ViewsAsProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewsAsProperties.swift; sourceTree = "<group>"; };
+		B40679802976A79000C2B17D /* ViewComposition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewComposition.swift; sourceTree = "<group>"; };
+		B40679822976A83D00C2B17D /* CustomModifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomModifiers.swift; sourceTree = "<group>"; };
+		B40679842976ACAF00C2B17D /* GridStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridStack.swift; sourceTree = "<group>"; };
 		B4244AFE2962C02900E9A494 /* SwiftUIControls.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIControls.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4244B012962C02900E9A494 /* SwiftUIControlsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIControlsApp.swift; sourceTree = "<group>"; };
 		B4244B032962C02900E9A494 /* PickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerView.swift; sourceTree = "<group>"; };
@@ -74,6 +80,9 @@
 				B4067960297005F600C2B17D /* Alert.swift */,
 				B406797C297697ED00C2B17D /* EnvironmentModifiers.swift */,
 				B406797E2976982C00C2B17D /* ViewsAsProperties.swift */,
+				B40679802976A79000C2B17D /* ViewComposition.swift */,
+				B40679822976A83D00C2B17D /* CustomModifiers.swift */,
+				B40679842976ACAF00C2B17D /* GridStack.swift */,
 				B4244B052962C02A00E9A494 /* Assets.xcassets */,
 				B4244B072962C02B00E9A494 /* Preview Content */,
 			);
@@ -159,6 +168,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				B406795D296FFC2000C2B17D /* Colour.swift in Sources */,
+				B40679812976A79000C2B17D /* ViewComposition.swift in Sources */,
+				B40679852976ACAF00C2B17D /* GridStack.swift in Sources */,
 				B406797F2976982C00C2B17D /* ViewsAsProperties.swift in Sources */,
 				B4244B042962C02900E9A494 /* PickerView.swift in Sources */,
 				B4244B022962C02900E9A494 /* SwiftUIControlsApp.swift in Sources */,
@@ -166,6 +177,7 @@
 				B406797D297697ED00C2B17D /* EnvironmentModifiers.swift in Sources */,
 				B4244B102962C0B800E9A494 /* TextFieldView.swift in Sources */,
 				B406795B296FFA1300C2B17D /* StackViews.swift in Sources */,
+				B40679832976A83D00C2B17D /* CustomModifiers.swift in Sources */,
 				B4067961297005F600C2B17D /* Alert.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
