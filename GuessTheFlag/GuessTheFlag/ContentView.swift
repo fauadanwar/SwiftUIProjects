@@ -7,6 +7,20 @@
 
 import SwiftUI
 
+struct Title: ViewModifier {
+    func body(content: Content) -> some View {
+        content
+            .font(.largeTitle.weight(.bold))
+            .foregroundColor(.white)
+    }
+}
+
+extension View {
+    func titleStyle() -> some View {
+        modifier(Title())
+    }
+}
+
 struct ContentView: View {
     
     @State private var countries = ["Estonia", "France", "Germany", "Ireland", "Italy", "Nigeria", "Poland", "Russia", "Spain", "UK", "US"].shuffled()
@@ -28,8 +42,7 @@ struct ContentView: View {
                 VStack {
                     Spacer()
                     Text("Guess the Flag")
-                        .font(.largeTitle.weight(.bold))
-                        .foregroundColor(.white)
+                        .titleStyle()
                     VStack(spacing: 15) {
                         VStack {
                             Text("Tap the flag of")
