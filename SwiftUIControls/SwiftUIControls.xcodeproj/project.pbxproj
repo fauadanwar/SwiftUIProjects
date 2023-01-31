@@ -21,6 +21,8 @@
 		B4244B062962C02A00E9A494 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B4244B052962C02A00E9A494 /* Assets.xcassets */; };
 		B4244B092962C02B00E9A494 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B4244B082962C02B00E9A494 /* Preview Assets.xcassets */; };
 		B4244B102962C0B800E9A494 /* TextFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4244B0F2962C0B800E9A494 /* TextFieldView.swift */; };
+		B4ED574929853A4000DC75C7 /* DatePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4ED574829853A4000DC75C7 /* DatePickerView.swift */; };
+		B4F3DE6A297D6336006B186A /* StepperView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4F3DE69297D6336006B186A /* StepperView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +41,8 @@
 		B4244B052962C02A00E9A494 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B4244B082962C02B00E9A494 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		B4244B0F2962C0B800E9A494 /* TextFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldView.swift; sourceTree = "<group>"; };
+		B4ED574829853A4000DC75C7 /* DatePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePickerView.swift; sourceTree = "<group>"; };
+		B4F3DE69297D6336006B186A /* StepperView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepperView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +87,8 @@
 				B40679802976A79000C2B17D /* ViewComposition.swift */,
 				B40679822976A83D00C2B17D /* CustomModifiers.swift */,
 				B40679842976ACAF00C2B17D /* GridStack.swift */,
+				B4F3DE69297D6336006B186A /* StepperView.swift */,
+				B4ED574829853A4000DC75C7 /* DatePickerView.swift */,
 				B4244B052962C02A00E9A494 /* Assets.xcassets */,
 				B4244B072962C02B00E9A494 /* Preview Content */,
 			);
@@ -168,6 +174,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B406795D296FFC2000C2B17D /* Colour.swift in Sources */,
+				B4ED574929853A4000DC75C7 /* DatePickerView.swift in Sources */,
 				B40679812976A79000C2B17D /* ViewComposition.swift in Sources */,
 				B40679852976ACAF00C2B17D /* GridStack.swift in Sources */,
 				B406797F2976982C00C2B17D /* ViewsAsProperties.swift in Sources */,
@@ -177,6 +184,7 @@
 				B406797D297697ED00C2B17D /* EnvironmentModifiers.swift in Sources */,
 				B4244B102962C0B800E9A494 /* TextFieldView.swift in Sources */,
 				B406795B296FFA1300C2B17D /* StackViews.swift in Sources */,
+				B4F3DE6A297D6336006B186A /* StepperView.swift in Sources */,
 				B40679832976A83D00C2B17D /* CustomModifiers.swift in Sources */,
 				B4067961297005F600C2B17D /* Alert.swift in Sources */,
 			);
