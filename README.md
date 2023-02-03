@@ -5,3 +5,4 @@
 - SwiftUISpreadSheet app provide horizontal and vertical scroll and show content of spreadsheet as view only.
 - GuessTheFlag App is a mini game to guess the flag of country.
 - BetterRest App which uses DatePicker, Stepper, Date, DateComponents, and ML to predict at what time user should sleep.
+- WordScramble is a game that will show players a random eight-letter word, and ask them to make words out of it. For example, if the starter word is “alarming” they might spell “alarm”, “ring”, “main”, and so on.
