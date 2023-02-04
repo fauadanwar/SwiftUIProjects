@@ -22,6 +22,7 @@
 		B4244B092962C02B00E9A494 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B4244B082962C02B00E9A494 /* Preview Assets.xcassets */; };
 		B4244B102962C0B800E9A494 /* TextFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4244B0F2962C0B800E9A494 /* TextFieldView.swift */; };
 		B4ED574929853A4000DC75C7 /* DatePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4ED574829853A4000DC75C7 /* DatePickerView.swift */; };
+		B4ED5769298E546800DC75C7 /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4ED5768298E546800DC75C7 /* ListView.swift */; };
 		B4F3DE6A297D6336006B186A /* StepperView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4F3DE69297D6336006B186A /* StepperView.swift */; };
 /* End PBXBuildFile section */
 
@@ -42,6 +43,7 @@
 		B4244B082962C02B00E9A494 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		B4244B0F2962C0B800E9A494 /* TextFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldView.swift; sourceTree = "<group>"; };
 		B4ED574829853A4000DC75C7 /* DatePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePickerView.swift; sourceTree = "<group>"; };
+		B4ED5768298E546800DC75C7 /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
 		B4F3DE69297D6336006B186A /* StepperView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepperView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -89,6 +91,7 @@
 				B40679842976ACAF00C2B17D /* GridStack.swift */,
 				B4F3DE69297D6336006B186A /* StepperView.swift */,
 				B4ED574829853A4000DC75C7 /* DatePickerView.swift */,
+				B4ED5768298E546800DC75C7 /* ListView.swift */,
 				B4244B052962C02A00E9A494 /* Assets.xcassets */,
 				B4244B072962C02B00E9A494 /* Preview Content */,
 			);
@@ -175,6 +178,7 @@
 			files = (
 				B406795D296FFC2000C2B17D /* Colour.swift in Sources */,
 				B4ED574929853A4000DC75C7 /* DatePickerView.swift in Sources */,
+				B4ED5769298E546800DC75C7 /* ListView.swift in Sources */,
 				B40679812976A79000C2B17D /* ViewComposition.swift in Sources */,
 				B40679852976ACAF00C2B17D /* GridStack.swift in Sources */,
 				B406797F2976982C00C2B17D /* ViewsAsProperties.swift in Sources */,
