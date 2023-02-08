@@ -16,11 +16,18 @@
 		B40679812976A79000C2B17D /* ViewComposition.swift in Sources */ = {isa = PBXBuildFile; fileRef = B40679802976A79000C2B17D /* ViewComposition.swift */; };
 		B40679832976A83D00C2B17D /* CustomModifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = B40679822976A83D00C2B17D /* CustomModifiers.swift */; };
 		B40679852976ACAF00C2B17D /* GridStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = B40679842976ACAF00C2B17D /* GridStack.swift */; };
+		B41968F92990E4A10060502D /* Animations.swift in Sources */ = {isa = PBXBuildFile; fileRef = B41968F82990E4A10060502D /* Animations.swift */; };
+		B41968FB2990EEE70060502D /* AnimationBinding.swift in Sources */ = {isa = PBXBuildFile; fileRef = B41968FA2990EEE70060502D /* AnimationBinding.swift */; };
+		B41968FD2990F09F0060502D /* WithAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B41968FC2990F09F0060502D /* WithAnimation.swift */; };
 		B4244B022962C02900E9A494 /* SwiftUIControlsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4244B012962C02900E9A494 /* SwiftUIControlsApp.swift */; };
 		B4244B042962C02900E9A494 /* PickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4244B032962C02900E9A494 /* PickerView.swift */; };
 		B4244B062962C02A00E9A494 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B4244B052962C02A00E9A494 /* Assets.xcassets */; };
 		B4244B092962C02B00E9A494 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B4244B082962C02B00E9A494 /* Preview Assets.xcassets */; };
 		B4244B102962C0B800E9A494 /* TextFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4244B0F2962C0B800E9A494 /* TextFieldView.swift */; };
+		B473F8042992A56500A97B7A /* CardDrag.swift in Sources */ = {isa = PBXBuildFile; fileRef = B473F8032992A56500A97B7A /* CardDrag.swift */; };
+		B473F8062992A5FC00A97B7A /* LetterDragAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B473F8052992A5FC00A97B7A /* LetterDragAnimation.swift */; };
+		B473F8082992A97600A97B7A /* TransitionAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B473F8072992A97600A97B7A /* TransitionAnimation.swift */; };
+		B473F80A2993703000A97B7A /* CustomModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = B473F8092993703000A97B7A /* CustomModifier.swift */; };
 		B4ED574929853A4000DC75C7 /* DatePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4ED574829853A4000DC75C7 /* DatePickerView.swift */; };
 		B4ED5769298E546800DC75C7 /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4ED5768298E546800DC75C7 /* ListView.swift */; };
 		B4F3DE6A297D6336006B186A /* StepperView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4F3DE69297D6336006B186A /* StepperView.swift */; };
@@ -36,12 +43,19 @@
 		B40679802976A79000C2B17D /* ViewComposition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewComposition.swift; sourceTree = "<group>"; };
 		B40679822976A83D00C2B17D /* CustomModifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomModifiers.swift; sourceTree = "<group>"; };
 		B40679842976ACAF00C2B17D /* GridStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridStack.swift; sourceTree = "<group>"; };
+		B41968F82990E4A10060502D /* Animations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animations.swift; sourceTree = "<group>"; };
+		B41968FA2990EEE70060502D /* AnimationBinding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationBinding.swift; sourceTree = "<group>"; };
+		B41968FC2990F09F0060502D /* WithAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WithAnimation.swift; sourceTree = "<group>"; };
 		B4244AFE2962C02900E9A494 /* SwiftUIControls.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIControls.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4244B012962C02900E9A494 /* SwiftUIControlsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIControlsApp.swift; sourceTree = "<group>"; };
 		B4244B032962C02900E9A494 /* PickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerView.swift; sourceTree = "<group>"; };
 		B4244B052962C02A00E9A494 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B4244B082962C02B00E9A494 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		B4244B0F2962C0B800E9A494 /* TextFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldView.swift; sourceTree = "<group>"; };
+		B473F8032992A56500A97B7A /* CardDrag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardDrag.swift; sourceTree = "<group>"; };
+		B473F8052992A5FC00A97B7A /* LetterDragAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LetterDragAnimation.swift; sourceTree = "<group>"; };
+		B473F8072992A97600A97B7A /* TransitionAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransitionAnimation.swift; sourceTree = "<group>"; };
+		B473F8092993703000A97B7A /* CustomModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomModifier.swift; sourceTree = "<group>"; };
 		B4ED574829853A4000DC75C7 /* DatePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePickerView.swift; sourceTree = "<group>"; };
 		B4ED5768298E546800DC75C7 /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
 		B4F3DE69297D6336006B186A /* StepperView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepperView.swift; sourceTree = "<group>"; };
@@ -92,6 +106,13 @@
 				B4F3DE69297D6336006B186A /* StepperView.swift */,
 				B4ED574829853A4000DC75C7 /* DatePickerView.swift */,
 				B4ED5768298E546800DC75C7 /* ListView.swift */,
+				B41968F82990E4A10060502D /* Animations.swift */,
+				B41968FA2990EEE70060502D /* AnimationBinding.swift */,
+				B41968FC2990F09F0060502D /* WithAnimation.swift */,
+				B473F8032992A56500A97B7A /* CardDrag.swift */,
+				B473F8052992A5FC00A97B7A /* LetterDragAnimation.swift */,
+				B473F8072992A97600A97B7A /* TransitionAnimation.swift */,
+				B473F8092993703000A97B7A /* CustomModifier.swift */,
 				B4244B052962C02A00E9A494 /* Assets.xcassets */,
 				B4244B072962C02B00E9A494 /* Preview Content */,
 			);
@@ -176,11 +197,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B41968FD2990F09F0060502D /* WithAnimation.swift in Sources */,
 				B406795D296FFC2000C2B17D /* Colour.swift in Sources */,
 				B4ED574929853A4000DC75C7 /* DatePickerView.swift in Sources */,
+				B41968FB2990EEE70060502D /* AnimationBinding.swift in Sources */,
 				B4ED5769298E546800DC75C7 /* ListView.swift in Sources */,
+				B473F8082992A97600A97B7A /* TransitionAnimation.swift in Sources */,
 				B40679812976A79000C2B17D /* ViewComposition.swift in Sources */,
+				B473F8062992A5FC00A97B7A /* LetterDragAnimation.swift in Sources */,
 				B40679852976ACAF00C2B17D /* GridStack.swift in Sources */,
+				B473F8042992A56500A97B7A /* CardDrag.swift in Sources */,
 				B406797F2976982C00C2B17D /* ViewsAsProperties.swift in Sources */,
 				B4244B042962C02900E9A494 /* PickerView.swift in Sources */,
 				B4244B022962C02900E9A494 /* SwiftUIControlsApp.swift in Sources */,
@@ -190,7 +216,9 @@
 				B406795B296FFA1300C2B17D /* StackViews.swift in Sources */,
 				B4F3DE6A297D6336006B186A /* StepperView.swift in Sources */,
 				B40679832976A83D00C2B17D /* CustomModifiers.swift in Sources */,
+				B41968F92990E4A10060502D /* Animations.swift in Sources */,
 				B4067961297005F600C2B17D /* Alert.swift in Sources */,
+				B473F80A2993703000A97B7A /* CustomModifier.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

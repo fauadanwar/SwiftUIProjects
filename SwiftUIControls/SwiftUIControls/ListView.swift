@@ -9,10 +9,35 @@ import SwiftUI
 
 struct ListView: View {
     let people = ["Finn", "Leia", "Luke", "Rey"]
+    let colors: [Color] = [.red, .green, .blue, .yellow]
 
     var body: some View {
         VStack
         {
+            List {
+                Section {
+                    ForEach(colors, id:\.self) {
+                       Color(UIColor($0))
+                            .listRowSeparator(.hidden)
+                            .listRowInsets(EdgeInsets(top: 0,
+                                                      leading: 15,
+                                                      bottom: 0,
+                                                      trailing: 15))
+                    }
+                } header: {
+                    ZStack{
+                        Color(.orange)
+                        Text("Colours")
+                            .padding(10)
+                    }
+                    .listRowSeparator(.hidden)
+                    .listRowInsets(EdgeInsets(top: 0,
+                                              leading: 15,
+                                              bottom: 0,
+                                              trailing: 15))
+                }
+            }
+
             List {
                 Text("Static Row")
                 ForEach(people, id: \.self) {

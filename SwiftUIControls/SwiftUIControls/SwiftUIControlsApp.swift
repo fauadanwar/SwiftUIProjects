@@ -11,7 +11,7 @@ import SwiftUI
 struct SwiftUIControlsApp: App {
     var body: some Scene {
         WindowGroup {
-            PickerView()
+            CustomModifier()
         }
     }
 }

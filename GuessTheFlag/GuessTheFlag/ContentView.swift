@@ -30,6 +30,10 @@ struct ContentView: View {
     @State private var alertMessage = ""
     @State private var qusetionNumber = 0
     @State private var score = 0
+    @State private var rotationAmount = 0.0
+    @State private var shakeNumber = -1
+    @State private var shakeAmount = 0.0
+    @State private var blurAmount = 0.0
 
     var body: some View {
         VStack {
@@ -57,6 +61,10 @@ struct ContentView: View {
                             } label: {
                                 FlagImage(countrieName: countries[number])
                             }
+                            .rotation3DEffect(.degrees(rotationAmount), axis: (x: 0, y: correctAnswer == number ? 1 : 0, z: 0))
+                            .blur(radius: correctAnswer == number ? 0 : blurAmount)
+                            .rotationEffect(.degrees(number == shakeNumber ? shakeAmount : 0), anchor: .center)
+
                         }
                     }
                     .frame(maxWidth: .infinity)
@@ -94,6 +102,27 @@ struct ContentView: View {
     
     func flagTapped(_ number: Int) {
         qusetionNumber += 1
+        withAnimation(.default.speed(0.25)) {
+            blurAmount = 1
+        }
+        
+        if number == correctAnswer
+        {
+            withAnimation{
+                rotationAmount += 360
+            }
+        }
+        else
+        {
+            shakeNumber = number
+            withAnimation(.default.speed(0.90)) {
+                shakeAmount += 20
+            }
+            withAnimation() {
+                shakeAmount -= 20
+            }
+        }
+       
         if qusetionNumber < 10
         {
             if number == correctAnswer {
@@ -124,12 +153,18 @@ struct ContentView: View {
     
     func restartGame()
     {
+        blurAmount = 0
+        shakeNumber = -1
+        shakeAmount = 0
         qusetionNumber = 0
         score = 0
         askQuestion()
     }
     
     func askQuestion() {
+        blurAmount = 0
+        shakeNumber = -1
+        shakeAmount = 0
         countries.shuffle()
         correctAnswer = Int.random(in: 0...2)
     }
