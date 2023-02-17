@@ -24,6 +24,12 @@
 		B4244B062962C02A00E9A494 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B4244B052962C02A00E9A494 /* Assets.xcassets */; };
 		B4244B092962C02B00E9A494 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B4244B082962C02B00E9A494 /* Preview Assets.xcassets */; };
 		B4244B102962C0B800E9A494 /* TextFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4244B0F2962C0B800E9A494 /* TextFieldView.swift */; };
+		B44C12A5299E0C700057DF5A /* StateWithStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = B44C12A4299E0C700057DF5A /* StateWithStruct.swift */; };
+		B44C12A7299E1F140057DF5A /* StateObjWithClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = B44C12A6299E1F140057DF5A /* StateObjWithClass.swift */; };
+		B44C12A9299E63F80057DF5A /* SheetPresentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B44C12A8299E63F80057DF5A /* SheetPresentation.swift */; };
+		B44C12AB299E65F80057DF5A /* EditDeleteList.swift in Sources */ = {isa = PBXBuildFile; fileRef = B44C12AA299E65F80057DF5A /* EditDeleteList.swift */; };
+		B44C12AD299F61940057DF5A /* UserDefaultAppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = B44C12AC299F61940057DF5A /* UserDefaultAppState.swift */; };
+		B44C12AF299F63F60057DF5A /* CodableJson.swift in Sources */ = {isa = PBXBuildFile; fileRef = B44C12AE299F63F60057DF5A /* CodableJson.swift */; };
 		B473F8042992A56500A97B7A /* CardDrag.swift in Sources */ = {isa = PBXBuildFile; fileRef = B473F8032992A56500A97B7A /* CardDrag.swift */; };
 		B473F8062992A5FC00A97B7A /* LetterDragAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B473F8052992A5FC00A97B7A /* LetterDragAnimation.swift */; };
 		B473F8082992A97600A97B7A /* TransitionAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B473F8072992A97600A97B7A /* TransitionAnimation.swift */; };
@@ -52,6 +58,12 @@
 		B4244B052962C02A00E9A494 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B4244B082962C02B00E9A494 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		B4244B0F2962C0B800E9A494 /* TextFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldView.swift; sourceTree = "<group>"; };
+		B44C12A4299E0C700057DF5A /* StateWithStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateWithStruct.swift; sourceTree = "<group>"; };
+		B44C12A6299E1F140057DF5A /* StateObjWithClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateObjWithClass.swift; sourceTree = "<group>"; };
+		B44C12A8299E63F80057DF5A /* SheetPresentation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheetPresentation.swift; sourceTree = "<group>"; };
+		B44C12AA299E65F80057DF5A /* EditDeleteList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditDeleteList.swift; sourceTree = "<group>"; };
+		B44C12AC299F61940057DF5A /* UserDefaultAppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultAppState.swift; sourceTree = "<group>"; };
+		B44C12AE299F63F60057DF5A /* CodableJson.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodableJson.swift; sourceTree = "<group>"; };
 		B473F8032992A56500A97B7A /* CardDrag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardDrag.swift; sourceTree = "<group>"; };
 		B473F8052992A5FC00A97B7A /* LetterDragAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LetterDragAnimation.swift; sourceTree = "<group>"; };
 		B473F8072992A97600A97B7A /* TransitionAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransitionAnimation.swift; sourceTree = "<group>"; };
@@ -113,6 +125,12 @@
 				B473F8052992A5FC00A97B7A /* LetterDragAnimation.swift */,
 				B473F8072992A97600A97B7A /* TransitionAnimation.swift */,
 				B473F8092993703000A97B7A /* CustomModifier.swift */,
+				B44C12A4299E0C700057DF5A /* StateWithStruct.swift */,
+				B44C12A6299E1F140057DF5A /* StateObjWithClass.swift */,
+				B44C12A8299E63F80057DF5A /* SheetPresentation.swift */,
+				B44C12AA299E65F80057DF5A /* EditDeleteList.swift */,
+				B44C12AC299F61940057DF5A /* UserDefaultAppState.swift */,
+				B44C12AE299F63F60057DF5A /* CodableJson.swift */,
 				B4244B052962C02A00E9A494 /* Assets.xcassets */,
 				B4244B072962C02B00E9A494 /* Preview Content */,
 			);
@@ -197,6 +215,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B44C12A7299E1F140057DF5A /* StateObjWithClass.swift in Sources */,
 				B41968FD2990F09F0060502D /* WithAnimation.swift in Sources */,
 				B406795D296FFC2000C2B17D /* Colour.swift in Sources */,
 				B4ED574929853A4000DC75C7 /* DatePickerView.swift in Sources */,
@@ -204,9 +223,13 @@
 				B4ED5769298E546800DC75C7 /* ListView.swift in Sources */,
 				B473F8082992A97600A97B7A /* TransitionAnimation.swift in Sources */,
 				B40679812976A79000C2B17D /* ViewComposition.swift in Sources */,
+				B44C12AF299F63F60057DF5A /* CodableJson.swift in Sources */,
 				B473F8062992A5FC00A97B7A /* LetterDragAnimation.swift in Sources */,
 				B40679852976ACAF00C2B17D /* GridStack.swift in Sources */,
+				B44C12A9299E63F80057DF5A /* SheetPresentation.swift in Sources */,
+				B44C12AD299F61940057DF5A /* UserDefaultAppState.swift in Sources */,
 				B473F8042992A56500A97B7A /* CardDrag.swift in Sources */,
+				B44C12AB299E65F80057DF5A /* EditDeleteList.swift in Sources */,
 				B406797F2976982C00C2B17D /* ViewsAsProperties.swift in Sources */,
 				B4244B042962C02900E9A494 /* PickerView.swift in Sources */,
 				B4244B022962C02900E9A494 /* SwiftUIControlsApp.swift in Sources */,
@@ -219,6 +242,7 @@
 				B41968F92990E4A10060502D /* Animations.swift in Sources */,
 				B4067961297005F600C2B17D /* Alert.swift in Sources */,
 				B473F80A2993703000A97B7A /* CustomModifier.swift in Sources */,
+				B44C12A5299E0C700057DF5A /* StateWithStruct.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
