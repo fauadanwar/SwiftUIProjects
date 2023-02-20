@@ -25,19 +25,17 @@ struct GridStack<Content: View>: View {
     }
 }
 
-struct GridView: View {
+struct GridContentView: View {
     var body: some View {
         GridStack(rows: 4, columns: 4) { row, col in
-//            HStack {
                 Image(systemName: "\(row * 4 + col).circle")
                 Text("R\(row) C\(col)")
-//            }
         }
     }
 }
 
-struct GridView_Previews: PreviewProvider {
+struct GridContentView_Previews: PreviewProvider {
     static var previews: some View {
-        GridView()
+        GridContentView()
     }
 }

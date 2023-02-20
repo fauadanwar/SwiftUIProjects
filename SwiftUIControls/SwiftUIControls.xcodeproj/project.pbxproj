@@ -30,6 +30,10 @@
 		B44C12AB299E65F80057DF5A /* EditDeleteList.swift in Sources */ = {isa = PBXBuildFile; fileRef = B44C12AA299E65F80057DF5A /* EditDeleteList.swift */; };
 		B44C12AD299F61940057DF5A /* UserDefaultAppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = B44C12AC299F61940057DF5A /* UserDefaultAppState.swift */; };
 		B44C12AF299F63F60057DF5A /* CodableJson.swift in Sources */ = {isa = PBXBuildFile; fileRef = B44C12AE299F63F60057DF5A /* CodableJson.swift */; };
+		B44C12D129A34E0C0057DF5A /* GeometryReaderImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B44C12D029A34E0C0057DF5A /* GeometryReaderImage.swift */; };
+		B44C12D329A353FB0057DF5A /* NavigationList.swift in Sources */ = {isa = PBXBuildFile; fileRef = B44C12D229A353FB0057DF5A /* NavigationList.swift */; };
+		B44C12D529A355960057DF5A /* JSONDecoderCodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B44C12D429A355960057DF5A /* JSONDecoderCodable.swift */; };
+		B44C12D729A357DD0057DF5A /* GridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B44C12D629A357DD0057DF5A /* GridView.swift */; };
 		B473F8042992A56500A97B7A /* CardDrag.swift in Sources */ = {isa = PBXBuildFile; fileRef = B473F8032992A56500A97B7A /* CardDrag.swift */; };
 		B473F8062992A5FC00A97B7A /* LetterDragAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B473F8052992A5FC00A97B7A /* LetterDragAnimation.swift */; };
 		B473F8082992A97600A97B7A /* TransitionAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B473F8072992A97600A97B7A /* TransitionAnimation.swift */; };
@@ -64,6 +68,10 @@
 		B44C12AA299E65F80057DF5A /* EditDeleteList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditDeleteList.swift; sourceTree = "<group>"; };
 		B44C12AC299F61940057DF5A /* UserDefaultAppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultAppState.swift; sourceTree = "<group>"; };
 		B44C12AE299F63F60057DF5A /* CodableJson.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodableJson.swift; sourceTree = "<group>"; };
+		B44C12D029A34E0C0057DF5A /* GeometryReaderImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeometryReaderImage.swift; sourceTree = "<group>"; };
+		B44C12D229A353FB0057DF5A /* NavigationList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationList.swift; sourceTree = "<group>"; };
+		B44C12D429A355960057DF5A /* JSONDecoderCodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONDecoderCodable.swift; sourceTree = "<group>"; };
+		B44C12D629A357DD0057DF5A /* GridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridView.swift; sourceTree = "<group>"; };
 		B473F8032992A56500A97B7A /* CardDrag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardDrag.swift; sourceTree = "<group>"; };
 		B473F8052992A5FC00A97B7A /* LetterDragAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LetterDragAnimation.swift; sourceTree = "<group>"; };
 		B473F8072992A97600A97B7A /* TransitionAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransitionAnimation.swift; sourceTree = "<group>"; };
@@ -131,6 +139,10 @@
 				B44C12AA299E65F80057DF5A /* EditDeleteList.swift */,
 				B44C12AC299F61940057DF5A /* UserDefaultAppState.swift */,
 				B44C12AE299F63F60057DF5A /* CodableJson.swift */,
+				B44C12D029A34E0C0057DF5A /* GeometryReaderImage.swift */,
+				B44C12D229A353FB0057DF5A /* NavigationList.swift */,
+				B44C12D429A355960057DF5A /* JSONDecoderCodable.swift */,
+				B44C12D629A357DD0057DF5A /* GridView.swift */,
 				B4244B052962C02A00E9A494 /* Assets.xcassets */,
 				B4244B072962C02B00E9A494 /* Preview Content */,
 			);
@@ -222,8 +234,10 @@
 				B41968FB2990EEE70060502D /* AnimationBinding.swift in Sources */,
 				B4ED5769298E546800DC75C7 /* ListView.swift in Sources */,
 				B473F8082992A97600A97B7A /* TransitionAnimation.swift in Sources */,
+				B44C12D529A355960057DF5A /* JSONDecoderCodable.swift in Sources */,
 				B40679812976A79000C2B17D /* ViewComposition.swift in Sources */,
 				B44C12AF299F63F60057DF5A /* CodableJson.swift in Sources */,
+				B44C12D729A357DD0057DF5A /* GridView.swift in Sources */,
 				B473F8062992A5FC00A97B7A /* LetterDragAnimation.swift in Sources */,
 				B40679852976ACAF00C2B17D /* GridStack.swift in Sources */,
 				B44C12A9299E63F80057DF5A /* SheetPresentation.swift in Sources */,
@@ -232,6 +246,7 @@
 				B44C12AB299E65F80057DF5A /* EditDeleteList.swift in Sources */,
 				B406797F2976982C00C2B17D /* ViewsAsProperties.swift in Sources */,
 				B4244B042962C02900E9A494 /* PickerView.swift in Sources */,
+				B44C12D129A34E0C0057DF5A /* GeometryReaderImage.swift in Sources */,
 				B4244B022962C02900E9A494 /* SwiftUIControlsApp.swift in Sources */,
 				B406795F297001E400C2B17D /* Buttons.swift in Sources */,
 				B406797D297697ED00C2B17D /* EnvironmentModifiers.swift in Sources */,
@@ -243,6 +258,7 @@
 				B4067961297005F600C2B17D /* Alert.swift in Sources */,
 				B473F80A2993703000A97B7A /* CustomModifier.swift in Sources */,
 				B44C12A5299E0C700057DF5A /* StateWithStruct.swift in Sources */,
+				B44C12D329A353FB0057DF5A /* NavigationList.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
