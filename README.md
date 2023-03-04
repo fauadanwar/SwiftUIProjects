@@ -7,3 +7,4 @@
 - BetterRest App which uses DatePicker, Stepper, Date, DateComponents, and ML to predict at what time user should sleep.
 - WordScramble is a game that will show players a random eight-letter word, and ask them to make words out of it. For example, if the starter word is “alarming” they might spell “alarm”, “ring”, “main”, and so on.
 - Drawing project is a fun app to learn about paths, shapes, inset table shapes and more.
+- iExpense is an expense tracker application that separates personal costs from business costs.
