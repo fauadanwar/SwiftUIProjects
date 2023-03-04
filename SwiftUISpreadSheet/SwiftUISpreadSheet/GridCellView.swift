@@ -44,7 +44,7 @@ struct GridCellView: View {
             .onChange(of: scrollId) { scrollId in
                 DispatchQueue.main.async {
                     withAnimation(.default.speed(0.3)) {
-                        scrollViewProxy.scrollTo("25A", anchor: .bottomLeading)
+                        scrollViewProxy.scrollTo("25X", anchor: .bottomLeading)
                     }
                 }
             }

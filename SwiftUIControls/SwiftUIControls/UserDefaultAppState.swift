@@ -10,7 +10,7 @@ import SwiftUI
 struct UserDefaultAppState: View {
     
     @State private var tapCountUserDefault = UserDefaults.standard.integer(forKey: "tapCountUserDefault")
-    @AppStorage("tapCountStState")  private var tapCountStState = 0
+    @AppStorage("tapCountStState") private var tapCountStState = 0
 
     var body: some View {
         VStack{

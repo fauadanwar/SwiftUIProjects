@@ -12,8 +12,7 @@ struct GridView: View {
         GridItem(.adaptive(minimum: 80, maximum: 120)),
     ]
     var body: some View {
-        ScrollView {
-            
+        ScrollView(.vertical, showsIndicators: true) {
             LazyVGrid(columns: layout) {
                 ForEach(0..<1000) {
                     Text("Item \($0)")

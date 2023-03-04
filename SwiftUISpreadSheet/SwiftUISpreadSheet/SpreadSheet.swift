@@ -7,13 +7,12 @@
 
 import SwiftUI
 
-import SwiftUI
 import SimultaneouslyScrollView
 import Introspect
 
 struct SpreadSheet: View {
     @State var scrollId: Bool = true
-    let numbers = Array(0...50)
+    let numbers = Array(0...150)
     var numberArray: [String] {
         numbers.map {
             String($0)

@@ -17,6 +17,7 @@ struct NavigationList: View {
                     Text("Row \(row)")
                 }
             }
+            .navigationBarTitleDisplayMode(.inline)
             .navigationTitle("SwiftUI")
         }
     }

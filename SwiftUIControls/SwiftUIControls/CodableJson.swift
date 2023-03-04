@@ -11,6 +11,7 @@ struct Singer: Codable {
     let firstName: String
     let lastName: String
 }
+
 struct CodableJson: View {
     @State private var singer = Singer(firstName: "Taylor", lastName: "Swift")
 
