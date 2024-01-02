@@ -88,3 +88,6 @@ fastlane/test_output
 # https://github.com/johnno1962/injectionforxcode
 
 iOSInjectionProject/
+WeSplit/.DS_Store
+GuessTheFlag/.DS_Store
+.DS_Store
